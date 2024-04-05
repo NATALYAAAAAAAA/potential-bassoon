@@ -4,3 +4,5 @@ import seaborn as sns
 
 games_df = pd.read_csv('/datasets/games.csv')
 print(games_df.info())
+games_df.columns = map(str.lower, games_df.columns)# Замените названия столбцов (приведите к нижнему регистру)
+display(games_df)
